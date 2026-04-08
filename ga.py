@@ -80,6 +80,10 @@ def genetic_algorithm(
         while len(new_pop) < pop_size:
             p1 = tournament_select(population, TOURNAMENT_K, fit)
             p2 = tournament_select(population, TOURNAMENT_K, fit)
+            attempts = 0
+            while p2 is p1 and attempts < 10:
+                p2 = tournament_select(population, TOURNAMENT_K, fit)
+                attempts += 1
             if random.random() < p_cross:
                 c1, c2 = crossover_one_point(p1, p2)
             else:
