@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-WEIGHTS = [2, 3, 4, 5, 9, 7, 8, 6]
-VALUES = [6, 5, 8, 9, 12, 10, 11, 7]
-CAPACITY = 20
+WEIGHTS = [7, 3, 10, 4, 9, 2, 8, 5, 6, 11, 3, 7, 4, 9, 6, 2, 8, 5]
+VALUES  = [13, 5, 18, 7, 16, 3, 14, 9, 11, 20, 6, 12, 8, 17, 10, 4, 15, 8]
+CAPACITY = 45
 
 
 @dataclass(frozen=True)
